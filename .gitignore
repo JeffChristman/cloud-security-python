@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Local credentials and configuration
+.env
+.env.*
+.aws/
+*.secret
+*.secrets
+
+# Generated assessment and report data
+*.csv
+*.xlsx
+*.docx
+*.html
+*.pdf
+output/
+reports/
+normalized/
+raw_reports/
+
+# Bundled runtimes and executables
+*.exe
+*.dll
+*.pyd
+*.zip
+*.p7x
+*.cat
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

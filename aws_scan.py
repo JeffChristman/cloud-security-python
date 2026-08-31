@@ -21,7 +21,7 @@ ticConformant verdicts:
 
 routeValidated = True whenever the path was actually resolved.
 
-Prereqs: pip install boto3 ; run ssologin2.py first.
+Prereqs: pip install boto3 ; run sso_login.py first.
 
 Usage:
   py aws_scan.py --sso-fragment example-directory --sso-region us-gov-west-1
@@ -81,7 +81,7 @@ def load_token(fragment):
         if best is None or exp > best[0]:
             best = (exp, d["accessToken"])
     if not best:
-        raise RuntimeError("No valid token for '%s'. Re-run ssologin2.py." % fragment)
+        raise RuntimeError("No valid token for '%s'. Re-run sso_login.py." % fragment)
     return best[1]
 
 

@@ -4,7 +4,7 @@ Perform AWS IAM Identity Center (SSO) login WITHOUT the AWS CLI.
 
 Replicates `aws sso login` using boto3's sso-oidc device authorization flow,
 then writes the token to ~/.aws/sso/cache/ in the same format the CLI uses,
-so aws_enum.py (the enumerator) can read it unchanged.
+so aws_scan.py (the scanner) can read it unchanged.
 
 Prereqs:
     pip install boto3    # already installed
